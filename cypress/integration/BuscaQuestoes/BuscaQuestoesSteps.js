@@ -20,11 +20,9 @@ Then(/^visualizo uma mensagem de erro com o texto "([^"]*)"$/, (msgErro) => {
 	Browse.validarMsgErro(msgErro);
 });
 
-
-When(/^seleciono a pesquisa por "([^"]*)"$/, (tipoPesquisa) => {
+And(/^seleciono a pesquisa por "([^"]*)"$/, (tipoPesquisa) => {
 	Browse.selecionarTipoPesquisa(tipoPesquisa);
 });
-
 
 Then(/^verifico que a listagem de questões possui 25 itens$/, () => {
 	Browse.validarQtdItensResultado();

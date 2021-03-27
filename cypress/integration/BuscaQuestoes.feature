@@ -9,10 +9,23 @@ Cenário: Busca por questão inexistente
     Quando clico no botão de buscar
     Então visualizo uma mensagem de erro com o texto "No questions found."
 
-    Cenário: Busca por categoria
+Cenário: Busca por categoria
     Dado que navego para a página de busca do banco de questões
     E digito "Science: Computers" no campo de busca
     E seleciono a pesquisa por "categoria"
     Quando clico no botão de buscar
     Então verifico que a listagem de questões possui 25 itens
     E o controle de paginação está disponível
+
+Esquema do Cenário: Busca por tipo
+    Dado que navego para a página de busca do banco de questões
+    E digito "<termoBusca>" no campo de busca
+    E seleciono a pesquisa por "<tipoPesquisa>"
+    Quando clico no botão de buscar
+    Então verifico que a listagem de questões possui 25 itens
+    E o controle de paginação está disponível
+
+    Exemplos:
+    | termoBusca | tipoPesquisa |
+    | a          | questão      |
+    | Agent2583  | usuário      |
