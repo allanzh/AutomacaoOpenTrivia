@@ -18,6 +18,12 @@
   },
   "homepage": "https://github.com/allanzh/AutomacaoOpenTrivia#readme",
   "dependencies": {
-    "cypress": "^6.6.0"
+    "cypress": "6.6.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "4.0.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }

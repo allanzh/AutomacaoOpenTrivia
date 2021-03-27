@@ -1,3 +1,4 @@
 {
-    "baseUrl": "https://opentdb.com/"
+    "baseUrl": "https://opentdb.com/",
+    "testFiles": "**/*.feature"
 }
