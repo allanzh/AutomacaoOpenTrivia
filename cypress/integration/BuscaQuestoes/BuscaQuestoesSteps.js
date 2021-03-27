@@ -19,3 +19,16 @@ When(/^clico no botão de buscar$/, () => {
 Then(/^visualizo uma mensagem de erro com o texto "([^"]*)"$/, (msgErro) => {
 	Browse.validarMsgErro();
 });
+
+When(/^seleciono a pesquisa por categoria$/, () => {
+	return true;
+});
+
+Then(/^verifico que a listagem de questões possui 25 itens$/, () => {
+	return true;
+});
+
+Then(/^o controle de paginação está disponível$/, () => {
+	return true;
+});
+
