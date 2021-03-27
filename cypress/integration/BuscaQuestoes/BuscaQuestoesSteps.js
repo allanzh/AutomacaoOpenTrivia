@@ -17,18 +17,20 @@ When(/^clico no botão de buscar$/, () => {
 });
 
 Then(/^visualizo uma mensagem de erro com o texto "([^"]*)"$/, (msgErro) => {
-	Browse.validarMsgErro();
+	Browse.validarMsgErro(msgErro);
 });
 
-When(/^seleciono a pesquisa por categoria$/, () => {
-	return true;
+
+When(/^seleciono a pesquisa por "([^"]*)"$/, (tipoPesquisa) => {
+	Browse.selecionarTipoPesquisa(tipoPesquisa);
 });
+
 
 Then(/^verifico que a listagem de questões possui 25 itens$/, () => {
-	return true;
+	Browse.validarQtdItensResultado();
 });
 
 Then(/^o controle de paginação está disponível$/, () => {
-	return true;
+	Browse.validarPaginacao();
 });
 
