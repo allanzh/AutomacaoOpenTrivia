@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
+import Home from "../../support/pages/Home";
+
 Given(/^que navego para a página de busca do banco de questões$/, () => {
 	cy.visit('/');
-    cy.get('a[href$="browse.php"]').first().click();
+	Home.navegarParaBancoQuestoes();
 });
 
 And(/^digito "([^"]*)" no campo de busca$/, (termoBusca) => {
