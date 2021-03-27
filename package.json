@@ -1,0 +1,23 @@
+{
+  "name": "AutomacaoOpenTrivia",
+  "version": "1.0.0",
+  "description": "Um simples projeto de automação do site https://opentdb.com/ utilizando Cypress + Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allanzh/AutomacaoOpenTrivia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allanzh/AutomacaoOpenTrivia/issues"
+  },
+  "homepage": "https://github.com/allanzh/AutomacaoOpenTrivia#readme",
+  "dependencies": {
+    "cypress": "^6.6.0"
+  }
+}
