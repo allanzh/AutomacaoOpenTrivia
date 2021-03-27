@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+import Browse from "../../support/pages/Browse";
 import Home from "../../support/pages/Home";
 
 Given(/^que navego para a página de busca do banco de questões$/, () => {
@@ -8,13 +9,13 @@ Given(/^que navego para a página de busca do banco de questões$/, () => {
 });
 
 And(/^digito "([^"]*)" no campo de busca$/, (termoBusca) => {
-	cy.get('#query').type(termoBusca);
+	Browse.preencherTermoBusca(termoBusca);
 });
 
 When(/^clico no botão de buscar$/, () => {
-    cy.get('.form-inline button').click();
+    Browse.clicarParaBuscar();
 });
 
 Then(/^visualizo uma mensagem de erro com o texto "([^"]*)"$/, (msgErro) => {
-	cy.get('.alert').should('have.text', msgErro);
+	Browse.validarMsgErro();
 });
