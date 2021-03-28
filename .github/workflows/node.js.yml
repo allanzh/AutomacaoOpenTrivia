@@ -38,7 +38,7 @@ jobs:
     
     # action video upload
     - name: Upload videos
-      uses: action/upload-artifact@v2.2.0
+      uses: actions/upload-artifact@v2.2.0
       if: always()
       with:
         name: videos
