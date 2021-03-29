@@ -24,5 +24,5 @@ Para fazer a execução manual do projeto, siga esses passos:
 - Abra o prompt de comando na pasta do projeto e execute o comando `npm i` para instalar as dependências necessárias
 - Após a conclusão das instalações, execute o comando `npx cypress run`
 - No final da execução você verá uma imagem semelhante a essa:
-![Execução com sucesso](https://ibb.co/Wk1gLXL)
+![Execução com sucesso](https://uploaddeimagens.com.br/images/003/157/329/full/success.png)
 - Você pode ver os vídeos gerados pela execução através da pasta `cypress/videos`
